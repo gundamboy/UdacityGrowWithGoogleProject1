@@ -1,60 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.retar.helloandriod.MainActivity">
+    android:fillViewport="true">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="144dp"
-        android:src="@drawable/udacitylogo2"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Our mission is to democratize education through the offering of world-class higher education opportunities that are accessible, flexible, and economical. Virtually anyone on the planet with an internet connection and a commitment to self-empowerment through learning can come to Udacity, master a suite of job-ready skills, and pursue rewarding employment."
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.retar.helloandriod.MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="Udacity"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/udacitylogo2"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/street"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="2465 Latham St"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textColor="#777777"
+            android:text="@string/mission" />
 
-    <TextView
-        android:id="@+id/state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="Mountain View, CA 94043"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:textColor="#777777"
+            android:text="@string/udacity_title"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="www.udacity.com"
-        android:paddingLeft="16dp"
-        android:paddingBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" >
 
-    <TextView
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="650-555-5555"/>
-</LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:src="@drawable/maps"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="map"
+                android:textColorLink="#777777"
+                android:text="@string/udacity_address"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:src="@drawable/net"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColorLink="#777777"
+                android:text="@string/udacity_web"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autoLink="phone"
+                android:textColorLink="#777777"
+                android:text="@string/udacity_phone"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

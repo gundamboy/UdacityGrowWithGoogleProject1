@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">HelloAndriod</string>
+    <string name="mission">Our mission is to democratize education through the offering of world-class higher education opportunities that are accessible, flexible, and economical. Virtually anyone on the planet with an internet connection and a commitment to self-empowerment through learning can come to Udacity, master a suite of job-ready skills, and pursue rewarding employment.</string>
+    <string name="udacity_title">Udacity</string>
+    <string name="udacity_address">2465 Latham St\nMountain View, CA 94043</string>
+    <string name="udacity_web">www.udacity.com</string>
+    <string name="udacity_phone">650-555-5555</string>
 </resources>
